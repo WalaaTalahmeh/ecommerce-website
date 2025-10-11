@@ -18,8 +18,9 @@ body {
 .header .icons img {
     display: block;
 }
+
 @media screen and (max-width:320px) {
-    .header .logo  img {
+    .header .logo img {
         height: 60px;
         width: 60px;
     }
@@ -34,66 +35,94 @@ body {
         display: none;
     }
 }
- @media screen and (min-width:321px) and (max-width:576px) {
+
+@media screen and (min-width:321px) and (max-width:576px) {
     .header .container {
         display: flex;
-        gap: 114px;
+        gap: 112px;
     }
+
     .header .logo img {
         height: 62px;
         width: 62px;
     }
+
     .header svg {
         display: block;
         height: 25px;
         width: 25px;
     }
+
     .header .icons img {
-        display: none;
-    }
-} 
- @media screen and (min-width:577px)and (max-width:768px)
-{    .header .container {
-        display: flex;
-        gap: 160px;
-    }
-       .header .logo img {
-        height: 90px;
-        width: 90px;
-    }
-        .header svg {
-        display: block;
-        height: 35px;
-        width: 35px;
-    }
-    .header .icons img {
-        display: none;
-    }
-} 
-@media screen and (min-width:769px)and (max-width:992px)
-{  .header .container {
-        display: flex;
-        gap: 50px;
-    }
-    .header .nav-item a
-     {
-        display:none;
-     }
-            .header svg {
-        display: block;
-        height: 35px;
-        width: 35px;
-       
-       
-    }    .header .icons img {
         display: none;
     }
 }
 
+@media screen and (min-width:577px)and (max-width:768px) {
+    .header .container {
+        display: flex;
+        gap: 164px;
+    }
 
+    .header .logo img {
+        height: 80px;
+        width: 80px;
+    }
 
+    .header svg {
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
 
+    .header .icons img {
+        display: none;
+    }
+}
 
+@media screen and (min-width:769px)and (max-width:992px) {
+    .header .container {
+        display: flex;
+        gap: 152px;
+    }
+/*  resposive عند 992 يوجد مشكلة في ال  */
+    .header .logo img {
+        height: 90px;
+        width: 90px;
+    }
 
+    .header svg {
+        display: block;
+        height: 33px;
+        width: 33px;
+    }
+
+    .header .nav-item a {
+        display: none;
+    }
+
+    .header .icons img {
+        display: none;
+    }
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .header .container {
+        display: flex;
+        gap: 35px;
+    }
+
+    .header .navbar-nav {
+        display: flex;
+        gap: 25px;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    .header .navbar-nav {
+        display: flex;
+        gap: 50px;
+    }
+}
 
 /* end header */
