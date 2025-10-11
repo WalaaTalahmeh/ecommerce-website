@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --secondaryColor: #B88E2F;
+    --mainFont:  font-family: "Montserrat", sans-serif;
+}
+
+
 body {
     height: 5000px;
 }
@@ -85,7 +92,8 @@ body {
         display: flex;
         gap: 152px;
     }
-/*  resposive عند 992 يوجد مشكلة في ال  */
+
+    /*  resposive عند 992 يوجد مشكلة في ال  */
     .header .logo img {
         height: 90px;
         width: 90px;
@@ -126,3 +134,45 @@ body {
 }
 
 /* end header */
+/* start hero */
+.hero {
+    background-image: url(../img/hero/bg-hero.webp);
+
+}
+
+.hero .hero-content {
+    position: absolute;
+    width: 550px;
+    height: 350px;
+    background-color: #FFF3E3;
+    top: 350px;
+    right: 350px;
+    padding: 62px;
+}
+
+.hero-content .note {
+    color:#333333;
+    font-size: 17px;
+         font-family: var(--mainFont);
+}
+
+.hero-content .title {
+    color: var(--secondaryColor);
+    font-weight: 700;
+         font-family: var(--mainFont);
+}
+
+.hero-content .btn {
+    background-color: var(--secondaryColor);
+    color: white;
+    font-weight: 900;
+    padding: 20px 30px;
+}
+
+.hero-content  p {
+    color:#333333;
+        font-size: 17px;
+        font-family: var(--mainFont);
+}
+
+/* end hero */
