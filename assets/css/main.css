@@ -1,4 +1,7 @@
 /* start header */
+.header nav{
+     background-color:#FFFFFF;
+}
 .header .navbar-nav
 {
     margin:auto;
