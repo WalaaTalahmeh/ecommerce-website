@@ -1,65 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <!--bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--custom css-->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
     <header class="header">
-        <nav class="navbar bg-white navbar-expand-lg position-fixed w-100 py-3 ">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <div class="logo">
-                    <a class="navbar-brand" href="#"><img src="./assets/img/header/imgLogo.svg"></a>
-                    <a class="navbar-brand" href="#"><img src="./assets/img/header/logo.svg"></a>
+                <a class="navbar-brand" href="#"><img src="./assets/images/header/imgLogo.svg"></a>
+                <a class="navbar-brand" href="#"><img src="./assets/images/header/logo.svg"></a>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                    <path
-                        d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
-                </svg>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav  mb-2 mb-lg-0 d-flex align-items-center m-auto">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">shop</a>
+                            <a class="nav-link active" aria-current="page" href="#">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link active" aria-current="page" href="#">Contact</a>
                         </li>
                     </ul>
+                    
                 </div>
-                <div class="icons d-flex gap-5">
-                    <a href="#"><img src="./assets/img/header/icons/account.svg" alt="accountIcon"></a>
-                    <a href="#"><img src="./assets/img/header/icons/search.svg" alt="searchIcon"></a>
-                    <a href="#"><img src="./assets/img/header/icons/heart.svg" alt="heartIcon"></a>
-                    <a href="#"><img src="./assets/img/header/icons/buy.svg" alt="buyIcon"></a>
+                <div class="icons ">
+                    <a href="#"><img src="./assets/images/header/icons/account.svg" alt="accountIcon"></a>
+                    <a href="#"><img src="./assets/images/header/icons/search.svg" alt="searchIcon"></a>
+                    <a href="#"><img src="./assets/images/header/icons/heart.svg" alt="heartIcon"></a>
+                    <a href="#"><img src="./assets/images/header/icons/buy.svg" alt="buyIcon"></a>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section class="hero vh-100 p-5">
-            <div class="hero-content">
-                <h2 class="note">New Arrival</h2>
-                <h2 class="title">Discover Our New Collection</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
-                    mattis.</p>
-                <button type="button" class="btn ">BUY NOW</button>
-            </div>
-        </section>
-    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

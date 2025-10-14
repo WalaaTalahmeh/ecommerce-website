@@ -1,178 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-:root {
-    --secondaryColor: #B88E2F;
-    --mainFont:  font-family: "Montserrat", sans-serif;
-}
-
-
-body {
-    height: 5000px;
-}
-
-
-
-
 /* start header */
-.header svg {
-    display: none;
+.header .navbar-nav
+{
+    margin:auto;
+    gap:1rem;
+    font-weight:700;
 }
+ .header .icons
+{
+    display:flex;
+    gap: 3rem;
 
-.header .nav-item a {
-    color: #000000;
-    font-weight: 500;
-}
-
-.header .icons img {
-    display: block;
-}
-
-@media screen and (max-width:320px) {
-    .header .logo img {
-        height: 60px;
-        width: 60px;
-    }
-
-    .header svg {
-        display: block;
-        height: 20px;
-        width: 20px;
-    }
-
-    .header .icons img {
-        display: none;
+} 
+@media screen and (max-width:320px)
+{
+    .header .icons
+    { 
+     display:none;
     }
 }
-
-@media screen and (min-width:321px) and (max-width:576px) {
-    .header .container {
-        display: flex;
-        gap: 112px;
-    }
-
-    .header .logo img {
-        height: 62px;
-        width: 62px;
-    }
-
-    .header svg {
-        display: block;
-        height: 25px;
-        width: 25px;
-    }
-
-    .header .icons img {
-        display: none;
+@media screen and (min-width:321px) and (max-width:576px)
+{
+        .header .icons
+    { 
+        display:none;
     }
 }
-
-@media screen and (min-width:577px)and (max-width:768px) {
-    .header .container {
-        display: flex;
-        gap: 164px;
-    }
-
-    .header .logo img {
-        height: 80px;
-        width: 80px;
-    }
-
-    .header svg {
-        display: block;
-        height: 30px;
-        width: 30px;
-    }
-
-    .header .icons img {
-        display: none;
+@media screen and (min-width:577px) and (max-width:768px)
+{ 
+       .header .icons
+    { 
+        display:none;
     }
 }
-
-@media screen and (min-width:769px)and (max-width:992px) {
-    .header .container {
-        display: flex;
-        gap: 152px;
-    }
-
-    /*  resposive عند 992 يوجد مشكلة في ال  */
-    .header .logo img {
-        height: 90px;
-        width: 90px;
-    }
-
-    .header svg {
-        display: block;
-        height: 33px;
-        width: 33px;
-    }
-
-    .header .nav-item a {
-        display: none;
-    }
-
-    .header .icons img {
-        display: none;
-    }
-}
-
-@media screen and (min-width:993px) and (max-width:1200px) {
-    .header .container {
-        display: flex;
-        gap: 35px;
-    }
-
-    .header .navbar-nav {
-        display: flex;
-        gap: 25px;
-    }
-}
-
-@media screen and (min-width:1201px) {
-    .header .navbar-nav {
-        display: flex;
-        gap: 50px;
-    }
-}
-
-/* end header */
-/* start hero */
-.hero {
-    background-image: url(../img/hero/bg-hero.webp);
-
-}
-
-.hero .hero-content {
-    position: absolute;
-    width: 550px;
-    height: 350px;
-    background-color: #FFF3E3;
-    top: 350px;
-    right: 350px;
-    padding: 62px;
-}
-
-.hero-content .note {
-    color:#333333;
-    font-size: 17px;
-         font-family: var(--mainFont);
-}
-
-.hero-content .title {
-    color: var(--secondaryColor);
-    font-weight: 700;
-         font-family: var(--mainFont);
-}
-
-.hero-content .btn {
-    background-color: var(--secondaryColor);
-    color: white;
-    font-weight: 900;
-    padding: 20px 30px;
-}
-
-.hero-content  p {
-    color:#333333;
-        font-size: 17px;
-        font-family: var(--mainFont);
-}
-
-/* end hero */
+/* end header */ 
