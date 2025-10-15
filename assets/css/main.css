@@ -66,14 +66,14 @@
 
 .hero-content .title {
     color: var(--seconderyColor);
-     font-weight:700;
+    font-weight: 700;
 }
 
 .hero-content .btn {
     background-color: var(--seconderyColor);
     color: white;
     padding: 15px 35px;
-    font-weight:700;
+    font-weight: 700;
 }
 
 @media screen and (max-width:320px) {
@@ -107,6 +107,7 @@
         height: 350px;
     }
 }
+
 @media screen and (min-width:993px) and (max-width:1200px) {
     .hero .hero-content {
         right: 55px;
@@ -114,6 +115,7 @@
         height: 350px;
     }
 }
+
 @media screen and (min-width:1201px) and (max-width:1400px) {
     .hero .hero-content {
         right: 55px;
@@ -121,4 +123,71 @@
         height: 350px;
     }
 }
+
 /* end hero  */
+/* start range */
+.range .title {
+    font-weight: 700;
+}
+
+.range .rangeContent {
+    flex: 1 0 250px;
+}
+
+.range .rangeContent h2 {
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width:320px) {
+    .range .rangeContent img
+{
+    width:200px;
+} 
+.range .rangeContent h2 {
+    font-size: 1.5rem;
+}
+}
+ @media screen and (min-width:768px)and (max-width:992px) {
+    .range .rangeContent .thirdImg {
+        width: 250px;
+        height:347px;
+        margin: auto;
+    }
+    .range .rangeContent h2 {
+    font-size: 1.6rem;
+}
+} 
+
+ @media screen and (min-width:993px)and (max-width:1200px) {
+  .range .rangeContent .thirdImg {
+        width: 320px;
+        height: 400px;
+        margin: auto;
+    }
+    .range .rangeContent h2 {
+    font-size: 1.7rem;
+}
+}
+
+@media screen and (min-width:1201px)and (max-width:1400px) {
+    .range .rangeContent .thirdImg {
+        width: 376px;
+        height: 473px;
+        margin: auto;
+    }
+    .range .rangeContent h2 {
+    font-size: 1.7rem;
+}
+}
+@media screen and (min-width:1401px) {
+    .range .rangeContent .thirdImg {
+       width: 376px;
+        height: 473px;
+        margin: auto;
+    }
+    .range .rangeContent h2 {
+    font-size: 1.7rem;
+}
+} 
+
+/* end range */
