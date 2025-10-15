@@ -128,6 +128,7 @@
 /* start range */
 .range .title {
     font-weight: 700;
+     font-size: 40px;
 }
 
 .range .rangeContent {
@@ -156,5 +157,89 @@
     }
 }
 
-
 /* end range */
+/* start products */
+.products .title
+{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+ .row>*{
+  padding:0;
+}
+.products .card{
+   flex: 1 0 250px; 
+}
+.card{
+    border-radius: 0;
+ position:relative;
+}
+.products img
+{
+    border-radius: 0;
+    position:relative;
+}
+.products .sale30
+{
+    position:absolute;
+    top:20px;
+    right:30px;
+}
+.btn{
+    border-radius:unset;
+}
+.card .btn
+{
+    display:none;
+    position:absolute;
+    top:150px;
+    right:80px;
+    color:var(--seconderyColor);
+    background-color: white;
+    font-weight: 700;
+    z-index:2;
+    padding:10px 30px;
+   
+    
+}
+.products .card-body
+{
+    background-color: #F4F5F7;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+}
+.card-body p,.card-body .old-price{
+color:#898989;
+}
+.card-body .old-price
+{
+    text-decoration: line-through;
+    font-size: 15px;
+}
+.card-body .new-price
+{
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+.card::after{
+    content:'';
+    background: rgpa(0,0,0,0);
+    position:absolute;
+    z-index:1;
+    width:100%;
+    height:100%;
+    transition:all 0.9s 0s ;
+}
+.card:hover::after
+{
+background:rgba(0, 0, 0, 0.596)
+
+}
+.card:hover .btn{
+    display:block;
+}
+
+/* end products */ 
